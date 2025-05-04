@@ -9,6 +9,7 @@ html {
 }
 
 a {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -42,7 +43,7 @@ button {
 }
 
 .container {
-    border: solid 3px red;
+    /*border: solid 3px red;*/
     height: 100%;
     width: 100%;
     max-width: 1230px;
@@ -60,10 +61,12 @@ button {
 }
 
 .menu-list {
-    font-size: Red Hat Text Medium ;
+    font-family: "Red Hat Text", sans-serif;
     display: flex;
     gap: 42px;
     align-items: center;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .login-btn {
@@ -79,6 +82,7 @@ button {
     font-weight: 700;
     font-size: 80px;
     color: #fff;
+    padding: 32px 0 0;
 }
 
 .main-text {
@@ -87,11 +91,25 @@ button {
     font-weight: 700;
     font-size: 20px;
     color: #fff;
+    padding: 42px 0;
+}
+
+.search-form {
+    display: flex;
+    justify-content: flex-start; /* выравнивание формы по центру */
+    margin-top: 20px;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 892px; /* по макету */
+
 }
 
 .search-input {
-    width: 892px;
+    width: 100%;
     height: 95px;
+    padding: 0 230px 0 24px;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.7);
     border: none;
@@ -103,10 +121,13 @@ input::placeholder {
     font-weight: 400;
     font-size: 24px;
     color: #f2785c;
-    padding: 32px 0 41px 41px;
 }
 
 .search-btn {
+    position: absolute;
+    top: 50%; /* выравниваем по вертикали */
+    transform: translateY(-50%);
+    right: 18px;
     padding: 10px 32px;
     width: 228px;
     height: 59px;
