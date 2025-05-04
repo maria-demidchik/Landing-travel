@@ -5,9 +5,111 @@
 }
 
 html {
-    background: gray;
+
 }
 
 a {
     text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+li {
+    white-space: nowrap;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(13, 96, 111, 0.16), 0 0 3px 0 rgba(13, 96, 111, 0.08);
+    background: #0d606f;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.hero-bg {
+    background-image: url("./images/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 765px;
+}
+
+.site-header {
+    background-color: rgba(242, 120, 92, 0.7);
+}
+
+.container {
+    border: solid 3px red;
+    height: 100%;
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 90px;
+    gap: 160px;
+    padding: 25px 0;
+}
+
+.menu-list {
+    font-size: Red Hat Text Medium ;
+    display: flex;
+    gap: 42px;
+    align-items: center;
+}
+
+.login-btn {
+    padding: 10px 30px;
+    width: 103px;
+    height: 41px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-title {
+    font-family: "Aleo", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: #fff;
+}
+
+.main-text {
+    font-family: "Aleo", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.search-input {
+    width: 892px;
+    height: 95px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+}
+
+input::placeholder {
+    font-family: "Aleo", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    color: #f2785c;
+    padding: 32px 0 41px 41px;
+}
+
+.search-btn {
+    padding: 10px 32px;
+    width: 228px;
+    height: 59px;
+    font-weight: 500;
+    font-size: 24px;
 }

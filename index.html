@@ -19,24 +19,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Magra:wght@400;700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
           rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Magra:wght@400;700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-<header>
+<div class="hero-bg">
+<header class="site-header">
+  <div class="container">
+   <div class="header-wrapper">
     <a href="">
-     <img src="./images/logo.png" alt="Logo">
+     <img src="./images/logo.png" alt="Travel Portal logo">
     </a>
-    <div class="menu-link">
-        <ul>
+       <nav>
+        <ul class="menu-list">
             <li><a href="#">How It Works</a></li>
             <li><a href="#">Plan Your Trip</a></li>
             <li><a href="#">Destinations</a></li>
             <li><a href="#">Travel Stories</a></li>
          </ul>
-    </div>
-    <button type="button" onclick="openloginModal()">Login</button>
+       </nav>
+    <button type="button" class="login-btn">Login</button>
+   </div>
+  </div>
 </header>
-<section></section>
+<section class="main-section">
+    <div class="container">
+    <h1 class="main-title">Explore the beauty of the World</h1>
+    <p class="main-text">Receive personalized recommendations for countries,
+        hotels,
+        activities and more</p>
+    <form action="">
+        <input class="search-input" type="search"
+               placeholder="What would you like to do?"
+               aria-label="Search destination">
+        <button type="submit" class="search-btn">Start Planning</button>
+    </form>
+    </div>
+</section>
+</div>
 <footer></footer>
 </body>
 </html>
